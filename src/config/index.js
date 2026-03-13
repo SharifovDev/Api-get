@@ -1,7 +1,7 @@
 import axios from "axios";
 export let baseUrl;
+baseUrl = "https://api.restful-api.dev";
 // baseUrl = "http://localhost:8080";
-baseUrl = "https://api.restful-api.dev/objects";
 // baseUrl = "";
 
 export default function (url, method, data, param) {
@@ -38,7 +38,7 @@ export default function (url, method, data, param) {
           url:
             baseUrl +
             `/api/v1/auth/refresh?refreshToken=${localStorage.getItem(
-              "refresh_token"
+              "refresh_token",
             )}`,
           method: "POST",
         })
