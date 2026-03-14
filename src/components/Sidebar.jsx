@@ -9,10 +9,6 @@ function Sidebar() {
           Powered by<b className="ml-4 text-2xl">SharifovDev</b>
         </p>
       </div>
-      <div className="m-0.5 fixed t-0 r-0 h-full bg-gradient-to-b from-red-500 to-stone-500">
-          <h1 className="p-5 text-xl font-bold">All Product</h1>
-          <h1 className="p-5 text-xl font-bold">Add Product</h1>
-      </div>
     </div>
   );
 }
