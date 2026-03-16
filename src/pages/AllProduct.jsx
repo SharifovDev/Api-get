@@ -22,25 +22,25 @@ function AllProduct() {
     fetchProduct();
   }, []);
 
- const handleSave = () => {
-  if (name === "" || color === "" || price === "") {
-    alert("Ma'lumotlarni to'liq kiriting");
-    return;
-  }
-  const newProduct = {
-    id: products.length + 1,
-    name: name,
-    data: {
-      color: color,
-      price: price,
-    },
-  };
+  const handleSave = () => {
+    if (name === "" || color === "" || price === "") {
+      alert("Ma'lumotlarni to'liq kiriting");
+      return;
+    }
+    const newProduct = {
+      id: products.length + 1,
+      name: name,
+      data: {
+        color: color,
+        price: price,
+      },
+    };
 
-  setProducts([...products, newProduct]);
-  setName("");
-  setColor("");
-  setPrice("");
-};
+    setProducts([...products, newProduct]);
+    setName("");
+    setColor("");
+    setPrice("");
+  };
 
   const handleDelete = (index) => {
     const newProducts = products.filter((_, i) => i !== index);
